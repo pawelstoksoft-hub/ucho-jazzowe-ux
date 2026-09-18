@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ucho Jazzowe — 5 kierunków UX</title>
+  <meta name="description" content="Pięć wizualnych koncepcji UX dla Ucha Jazzowego.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap');
+    *{box-sizing:border-box}body{margin:0;background:#f4efe5;color:#162126;font-family:"DM Sans",sans-serif}
+    a{text-decoration:none;color:inherit}.shell{max-width:1240px;margin:auto;padding:28px 24px 72px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:24px;margin-bottom:54px}
+    .brand{display:flex;align-items:center;gap:14px}.brand img{width:64px;height:64px;object-fit:contain;border-radius:16px}
+    .brand b{font-family:"Fraunces",serif;font-size:24px}.brand span{display:block;color:#66706e;font-size:13px;margin-top:3px}
+    .pill{border:1px solid #c8c1b5;padding:9px 13px;border-radius:999px;font-size:12px;color:#5f625f;background:#fffaf2}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:end;margin-bottom:44px}
+    h1{font-family:"Fraunces",serif;font-size:clamp(42px,7vw,84px);line-height:.95;letter-spacing:-.045em;margin:0}
+    .lead{font-size:18px;line-height:1.6;color:#5c6663;max-width:520px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 4;min-height:330px;border-radius:26px;padding:24px;position:relative;overflow:hidden;border:1px solid rgba(20,30,30,.1);transition:.22s transform,.22s box-shadow}
+    .card:hover{transform:translateY(-5px);box-shadow:0 24px 70px rgba(30,32,29,.13)}
+    .card:nth-child(4),.card:nth-child(5){grid-column:span 6}
+    .n{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;opacity:.72}
+    .card h2{font-family:"Fraunces",serif;font-size:34px;line-height:1.03;margin:70px 0 12px;max-width:260px}
+    .card p{max-width:300px;line-height:1.55;margin:0;opacity:.76}
+    .go{position:absolute;bottom:22px;right:22px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.84);font-size:20px}
+    .c1{background:#fff8eb;color:#23434a}.c2{background:#dbe8f7;color:#17365d}.c3{background:#efd8c0;color:#623625}.c4{background:#eddc65;color:#2b3433}.c5{background:#f7f7f2;color:#161a1b}
+    .shape{position:absolute;border-radius:50%;filter:saturate(.9);opacity:.75}
+    .c1 .shape{width:140px;height:140px;background:#d85f3f;right:-30px;top:-20px}
+    .c2 .shape{width:190px;height:70px;background:#2d5f90;right:-45px;top:22px;border-radius:22px;transform:rotate(-13deg)}
+    .c3 .shape{width:150px;height:150px;background:#d69b45;right:-40px;top:-35px}
+    .c4 .shape{width:120px;height:120px;background:#bf4837;right:34px;top:26px;border-radius:18px;transform:rotate(18deg)}
+    .c5 .shape{width:1px;height:150px;background:#b79a5f;right:68px;top:30px;border-radius:0}
+    footer{margin-top:36px;color:#767b78;font-size:13px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.card,.card:nth-child(4),.card:nth-child(5){grid-column:span 6}}
+    @media(max-width:620px){header{align-items:flex-start}.brand img{width:50px;height:50px}.pill{display:none}.grid{display:block}.card{margin-bottom:14px;min-height:280px}.hero{gap:22px;margin-bottom:30px}.shell{padding:20px 16px 48px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand">
+        <img src="https://raw.githubusercontent.com/pawelstoksoft-hub/ucho-jazzowe/main/logo/ucho-jazzowe.webp" alt="Ucho Jazzowe">
+        <div><b>Ucho Jazzowe</b><span>UX concept lab · bez logiki muzycznej</span></div>
+      </div>
+      <div class="pill">5 koncepcji · wybierz kierunek</div>
+    </header>
+
+    <section class="hero">
+      <h1>Pięć sposobów,<br>żeby ucho chciało ćwiczyć.</h1>
+      <p class="lead">Każda wersja zachowuje ten sam cel UX: użytkownik ma od razu wiedzieć <strong>co ćwiczyć dzisiaj</strong>, widzieć postęp i mieć szybki dostęp do słabych punktów. Różni się język wizualny, rytm ekranu i charakter marki.</p>
+    </section>
+
+    <section class="grid">
+      <a class="card c1" href="v1-editorial.html">
+        <i class="shape"></i><div class="n">01 · Editorial Jazz</div>
+        <h2>Magazyn muzyczny, nie dashboard.</h2>
+        <p>Jasny, elegancki, lekko analogowy. Duża typografia, krem, turkus i rdzawy pomarańcz.</p><span class="go">→</span>
+      </a>
+      <a class="card c2" href="v2-blue-note.html">
+        <i class="shape"></i><div class="n">02 · Blue Note Modern</div>
+        <h2>Najbardziej produktowy i czytelny.</h2>
+        <p>Chłodniejszy, nowoczesny, szybki w obsłudze. Mocna hierarchia i modularny grid.</p><span class="go">→</span>
+      </a>
+      <a class="card c3" href="v3-warm-studio.html">
+        <i class="shape"></i><div class="n">03 · Warm Studio</div>
+        <h2>Przyjazny, ciepły i dotykowy.</h2>
+        <p>Miękkie karty, albumowy klimat i minimum technicznego chłodu.</p><span class="go">→</span>
+      </a>
+      <a class="card c4" href="v4-bauhaus.html">
+        <i class="shape"></i><div class="n">04 · Bauhaus / Cézanne</div>
+        <h2>Najbardziej charakterystyczna marka.</h2>
+        <p>Asymetria, geometria, rytm i odważny kolor. Artystyczny, ale nadal użytkowy.</p><span class="go">→</span>
+      </a>
+      <a class="card c5" href="v5-minimal-premium.html">
+        <i class="shape"></i><div class="n">05 · Minimal Premium</div>
+        <h2>Spokój, precyzja i dużo oddechu.</h2>
+        <p>Najbardziej dojrzały wizualnie. Minimalizm, czarne litery, subtelne złoto i cisza.</p><span class="go">→</span>
+      </a>
+    </section>
+
+    <footer><span>Mockupy wizualne · bez audio, mikrofonu i mechaniki ćwiczeń</span><span>Ucho Jazzowe · 2026</span></footer>
+  </main>
+</body>
+</html>
